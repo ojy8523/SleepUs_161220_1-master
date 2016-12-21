@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="260dp"
+        android:id="@+id/today_sleep"
+        android:src="@drawable/today_sleep"
+        android:background="#00000000"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/today_sleep">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today Sleep Time is "
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:textColor="#FF00FF"
+            android:id="@+id/today_sleep_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/total_earned_money"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:textSize="60px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="분"/>
+    </LinearLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/today_sleep"
+        android:id="@+id/today_sleep_time"
+        android:layout_marginBottom="30dp"/>-->
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="5dp"
+        android:id="@+id/line_1_1"
+        android:src="@drawable/line"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:id="@+id/total_charity"
+        android:src="@drawable/total_charity"
+        android:background="#00000000"
+        android:layout_below="@+id/line_1_1"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/total_charity">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Charity Day is "
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:textColor="#9d25c9"
+            android:id="@+id/total_charity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/total_earned_money"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:textSize="60px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="days"/>
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Charity Day is 10"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/total_charity"
+        android:id="@+id/total_charity_text"
+        android:layout_marginBottom="30dp"
+        />-->
+
+    <ImageView
+        android:layout_width="380dp"
+        android:layout_height="5dp"
+        android:id="@+id/line_2_2"
+        android:src="@drawable/line"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="258dp"
+        android:layout_height="40dp"
+        android:id="@+id/my_ranking"
+        android:src="@drawable/my_ranking"
+        android:background="#00000000"
+        android:layout_below="@+id/line_2_2"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/my_ranking">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Ranking is "
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:textColor="#49135c"
+            android:id="@+id/my_ranking_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/total_earned_money"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:textSize="60px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="!"/>
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Ranking is 1st"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/my_ranking"
+        android:id="@+id/my_ranking_text"
+        android:layout_marginBottom="30dp"
+        />-->
+
+    <Button
+        android:id="@+id/nextPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you"
+        android:background="#46BBEC"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFFFF"
+        />
+
+</RelativeLayout>
+

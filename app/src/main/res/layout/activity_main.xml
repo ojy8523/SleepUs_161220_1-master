@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.seungkyu.dreamtodream.MainActivity"
+    android:onClick="linearOnClick"
+    android:background="@color/bg">
+
+
+
+    <ImageView
+        android:id="@+id/logoCharicter"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/moon"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:src="@drawable/logo_typo"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="20dp"
+    android:layout_below="@+id/logoCharicter"/>
+
+    <EditText
+        android:id="@+id/emailLoginET"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:hint="email"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="360dp" />
+
+    <EditText
+        android:id="@+id/passwordLoginET"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:inputType="textWebPassword"
+        android:hint="password"
+        android:layout_marginBottom="25dp"
+        android:layout_below="@id/emailLoginET" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="Log in"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/passwordLoginET"
+        android:layout_alignLeft="@id/passwordLoginET"
+        android:textColor="@color/clickable_words"
+        android:background="#F9D537"
+        android:paddingRight="5dp"
+        android:paddingLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:layout_alignTop="@id/loginBtn"
+        android:layout_alignRight="@id/passwordLoginET"
+        android:textColor="@color/clickable_words"
+        android:background="#F9D537"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember email and password"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/loginBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/remember"/>
+
+</RelativeLayout>
